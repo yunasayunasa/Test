@@ -64,6 +64,7 @@
     function preload() {
       this.load.image('character', 'djeeta.png');
       this.load.audio('clap', 'clap.mp3');
+      this.load.audio('tapclap', 'clap_se.mp3');
     }
 
     function create() {
@@ -85,7 +86,7 @@
           yoyo: true,
           ease: 'Power1'
         });
-        this.sound.play('clap');
+        this.sound.play('tapclap');
       });
     }
 
