@@ -1,0 +1,38 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+/* 背景画像はゲーム画面描画時にcanvas内で描画するので、ここはシンプルに */
+#gameCanvas {
+  display: block;
+  /* キャンバスサイズはJSでセット */
+}
+
+#specialButton img {
+  width: 30%; /* 必殺ボタン画像の幅を元の25%に縮小 */
+  height: auto;
+}
+
+#specialButton {
+  position: absolute;
+  top: 10px;
+  left: calc(30% + 50px); /* 中央から20px左にずらす */
+  /* transform: translateX(-50%); これは削除または無効にする */
+}
+
+#modeSelection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* ボタン間に20pxの隙間を追加 */
+  padding: 20px 0; /* コンテナの上下に余白を追加 */
+}
+
+#modeSelection button {
+  padding: 10px 20px; /* ボタン内側の余白 */
+  font-size: 18px;
+  margin: 10px 0; /* 各ボタンの上下に10pxの余白 */
+}
